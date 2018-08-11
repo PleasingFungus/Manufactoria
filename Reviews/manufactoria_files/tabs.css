@@ -1,0 +1,243 @@
+/* $Id: tabs.css,v 1.2 2008/09/08 02:35:29 johnalbin Exp $ */
+
+
+
+/*
+
+ * Tabs CSS
+
+ *
+
+ * Adds styles for the primary and secondary tabs.
+
+ *
+
+ * Compare this with default CSS found in the system module's stylesheet (a copy
+
+ * of which is in drupal6-reference.css, line 510.)
+
+ *
+
+ */
+
+
+
+  div.tabs
+
+  {
+
+    margin: 0.5em 0 0.5em;
+
+  }
+
+
+
+  ul.primary
+
+  {
+
+    margin: 0;
+
+    padding: 0 0 0 10px;
+
+    list-style: none;
+
+    white-space: nowrap;
+
+    line-height: normal;
+
+	border-bottom: 2px solid #000;
+
+  }
+
+
+
+  ul.primary li
+
+  {
+
+    float: left;
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+
+
+  ul.primary li a
+
+  {
+
+    margin: 0 2px;
+
+    padding: 0 4px;
+
+    border: 2px solid #000;
+
+	border-bottom: none;
+
+    text-decoration: none;
+
+    color: #000 !important;
+
+    background-color: #fff !important;
+
+  }
+
+
+
+  ul.primary li a .tab
+
+  {
+
+  }
+
+
+
+  ul.primary li a:hover
+
+  {
+    background-color: #f7941d !important;
+
+  }
+
+
+
+  ul.primary li a:hover .tab
+
+  {
+
+  }
+
+
+
+  ul.primary li.active a,
+
+  ul.primary li.active a:hover
+
+  {
+
+    color: #fff !important;
+
+    background-color: #000 !important;
+
+  }
+
+
+
+  ul.primary li.active a .tab,
+
+  ul.primary li.active a:hover .tab
+
+  {
+
+  }
+
+
+
+  ul.secondary
+
+  {
+
+    margin: 0;
+
+    padding: 0 0 0 5px;
+
+    border-bottom: 1px solid #000;
+
+    list-style: none;
+
+    white-space: nowrap;
+
+	background-color:#464646;
+
+  }
+
+
+
+  ul.secondary li
+
+  {
+
+    float: left;
+
+    margin: 0 5px 0 0;
+
+    padding: 5px 0;
+
+    border-right: none;
+
+  }
+
+
+
+  ul.secondary a
+
+  {
+
+    display: block;
+
+    height: 24px;
+	
+	line-height: 24px;
+
+    margin: 0;
+
+    padding: 0;
+
+    text-decoration: none;
+
+    color: #000 !important;
+
+	background-color: #fff !important;
+
+  }
+
+  
+
+  ul.secondary a:hover
+
+  {
+  	background-color: #f7941d !important;
+
+  }
+
+
+
+  ul.secondary a .tab
+
+  {
+
+    display: block;
+
+    height: 18px; /* 24px (parent) - 6px (padding) */
+
+    margin: 0;
+
+    padding: 3px 8px;
+
+    line-height: 18px;
+
+  }
+
+
+
+  ul.secondary a:hover
+
+  {
+
+  }
+
+
+
+  ul.secondary a.active, ul.secondary a.active:hover
+
+  {
+
+    color: #fff !important;
+
+	background-color: #000 !important;
+
+  }

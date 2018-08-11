@@ -1,0 +1,16 @@
+#featuredcontainer {
+	font-size:10pt;
+}
+.fg_moreinfo a {
+	height:46px;
+}
+.button-disabled {
+	filter:alpha(opacity=40);
+}
+#main-navigation ul li a {
+    padding: 7px 13px 7px 14px;
+}
+
+.featured-walkthrough {
+	margin-bottom:8px;
+}

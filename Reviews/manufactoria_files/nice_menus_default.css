@@ -1,0 +1,138 @@
+/* $Id: nice_menus_default.css,v 1.7 2009/02/09 00:19:36 add1sun Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  To help understand the CSS, the HTML looks like this, where
+    x is a number;
+    TYPE is down/left/right;
+    PATH is the menu path such as node/343;
+    MID is the menu id such as 33):
+  <ul id='nice-menu-x' class='nice-menu nice-menu-TYPE'>
+    <li id='menu-MID' class='menu-path-PATH'><a href='#'>This is a menu item</a></li>
+    <li class='menuparent menu-path-PATH'><a href='#'>A submenu</a>
+      <ul...><li...>...</li>
+      </ul>
+    </li>
+    ...
+  </ul>
+
+  If you have more than one nice-menu and want to target a particular one,
+  use its id (e.g. ul#nice-menu-2).
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for some CSS customization examples.
+*/
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+ul.nice-menu, ul.nice-menu ul{
+	list-style:none;
+	padding:0;
+	margin:0;}
+
+ul.nice-menu li{
+	float:left; /* LTR */
+	background-color:#000;
+	font-size:14px;
+	line-height:32px;}
+
+ul.nice-menu ul{
+	border:0;} /* LTR */
+
+ul.nice-menu ul li{
+	width:160px;}
+
+#navbar ul.nice-menu a{
+	color:#fff;}
+
+ul.nice-menu a{
+	padding:0 10px;
+	color:#fff;
+	text-decoration:none;}
+
+/******************************
+ VERTICAL (left/right) menus
+******************************/
+
+/* This is the default width of all vertical menus. */
+ul.nice-menu-right, ul.nice-menu-left, ul.nice-menu-right li, ul.nice-menu-left li{
+	width:150px;}
+
+/* VERTICAL menus where submenus pop RIGHT (default). */
+ul.nice-menu-right ul{
+	width:150px;
+	left:160px;}
+
+ul.nice-menu-right ul ul{
+	width:150px;
+	left:160px;}
+
+ul.nice-menu-right li.menuparent, ul.nice-menu-right li li.menuparent{
+	background:#000 url(arrow-right.png) right center no-repeat;}
+
+ul.nice-menu-right li.menuparent:hover, ul.nice-menu-right li.over, ul.nice-menu-right li li.menuparent:hover, ul.nice-menu-right li li.over{
+	background:#464646 url(arrow-right.png) right center no-repeat;}
+
+/* VERTICAL menus where submenus pop LEFT. */
+ul.nice-menu-left li ul{
+	width:150px;
+	left:-160px;}
+
+ul.nice-menu-left li ul li ul{
+	width:150px;
+	left:160px;}
+
+ul.nice-menu-left li.menuparent, ul.nice-menu-left li li.menuparent{
+	background:#000 url(arrow-left.png) left center no-repeat;}
+
+ul.nice-menu-left li.menuparent:hover, ul.nice-menu-left li.over, ul.nice-menu-left li li.menuparent:hover, ul.nice-menu-left li li.over{
+	background:#464646 url(arrow-left.png) left center no-repeat;}
+
+ul.nice-menu-left a, ul.nice-menu-left ul a{
+	padding-left:20px;}
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down{
+	float:left;} /* LTR */
+
+ul.nice-menu-down li{}
+
+ul.nice-menu li:hover, ul.nice-menu li.over{
+	background-color:#f7941d;}
+
+ul.nice-menu-down li li{
+	background-color:#464646;}
+
+ul.nice-menu-down ul{
+	left:0;} /* LTR */
+
+ul.nice-menu-down ul li{
+	clear:both;}
+
+ul.nice-menu-down li ul li ul{
+	left:170px;
+	top:0;} /* LTR */
+
+ul.nice-menu-down .menuparent a {
+  padding-right:20px;} /* LTR */
+
+ul.nice-menu-down li.menuparent{
+	background:#000 url(arrow-down.png) right center no-repeat;} /* LTR */
+
+ul.nice-menu-down li.menuparent:hover, ul.nice-menu-down li.over{
+	background:#464646 url(arrow-down.png) right center no-repeat;} /* LTR */
+
+ul.nice-menu-down li li.menuparent{
+	background:#464646 url(arrow-right.png) right center no-repeat;} /* LTR */
+
+ul.nice-menu-down li li.menuparent:hover, ul.nice-menu-down li li.over{
+	background:#f7941d url(arrow-right.png) right center no-repeat;} /* LTR */

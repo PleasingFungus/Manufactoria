@@ -1,0 +1,176 @@
+/* $Id: vote_up_down.css,v 1.12.2.4 2009/01/29 18:42:12 lut4rp Exp $  */
+
+.vote-up-down-widget {
+  display: inline-block;
+  clear: right;
+  float: right;
+  margin: 2px 14px 2px 0;
+  vertical-align: center;
+}
+
+.vote-up-down-via {
+  float: right;
+  color: #999;
+  padding-left: 3px;
+}
+
+.vote-up-act, .vote-up-inact, .vote-down-act, .vote-down-inact, .up-inact, .down-inact {
+  display: inline-block;
+  text-decoration: none;
+  width: 18px;
+  height: 18px;
+  float: left;
+}
+
+a.vote-up-inact, a.vote-down-inact, span.vote-up-inact, span.vote-down-inact {
+  cursor: pointer;
+}
+
+a.vote-up-act, a.vote-down-act, span.vote-up-act, span.vote-down-act {
+  cursor: default;
+}
+
+.vote-up-act {
+  background: url(images/plus_act.png) no-repeat 0px 0px;
+}
+
+.vote-up-inact:hover {
+  background: url(images/plus_hover.png) no-repeat 0px 0px;
+}
+
+.vote-up-inact, .up-inact {
+  background: url(images/plus_inact.png) no-repeat 0px 0px;
+}
+
+.vote-down-act {
+  background: url(images/minus_act.png) no-repeat 0px 0px;
+}
+
+ .vote-down-inact:hover {
+  background: url(images/minus_hover.png) no-repeat 0px 0px;
+}
+
+.vote-down-inact, .down-inact {
+  background: url(images/minus_inact.png) no-repeat 0px 0px;
+}
+
+
+.comment .vote-up-act, .comment .vote-up-inact:hover {
+  background: url(images/com_plus_act.png) no-repeat 0px 0px;
+}
+
+.comment .vote-up-inact, .comment .up-inact {
+  background: url(images/com_plus_inact.png) no-repeat 0px 0px;
+}
+
+.comment .vote-down-act, .comment .vote-down-inact:hover {
+  background: url(images/com_minus_act.png) no-repeat 0px 0px;
+}
+
+.comment .vote-down-inact, .comment .down-inact {
+  background: url(images/com_minus_inact.png) no-repeat 0px 0px;
+}
+
+.vote-points {
+float: right;
+margin-right: 14px;
+font-size: 12px;
+display: inline-block; 
+font-family: Arial, "Helvetica", "Bitstream Vera Sans", sans-serif;
+color: #666;
+}
+
+.comment-by-author .vote-up-down-widget, .comment-by-author .vote-points {
+margin-right: 10px;
+}
+
+.vote-points .plus {
+font-size: 8px;
+padding-right: -1px;
+}
+
+.vote-up-down-widget .vote-points {
+margin: 0;
+}
+
+.vote-points .positive {
+ color: #339900;
+ margin-left: 0.5em;
+ padding-left: 4px;
+}
+
+.vote-points .negative {
+ color: #CC0000;
+ margin-left: 0.5em;
+}
+
+.vote-points .neutral {
+ color: #A9A9A9;
+ margin-left: 0.5em;
+padding-left: 4px;
+}
+
+.vote-up-down-widget-alt {
+  float: left;
+  clear: left;
+  padding: 0;
+  margin: 2px 5px 2px 0;
+  border: 0;
+}
+
+.vote-up-down-widget-alt .vote-points {
+  background: #ff0;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  padding: 3px;
+  margin-bottom: 3px;
+}
+
+.vote-up-down-widget-alt .vote-points .vote-points {
+  background: transparent;
+  font-weight: normal;
+  font-size: 1em;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.vote-up-down-widget-alt .vote-points-label {
+  font-size: 0.5em;
+  background: transparent;
+}
+
+.vote-up-down-widget-alt .vote-up-act,
+.vote-up-down-widget-alt .vote-up-inact,
+.vote-up-down-widget-alt .up-inact {
+  display: block;
+  min-width: 16px;
+  max-width: auto;
+  height: 22px;
+}
+
+.vote-up-down-widget-alt span.vote-up-act,
+.vote-up-down-widget-alt span.vote-up-inact,
+.vote-up-down-widget-alt span.up-inact {
+  border: 1px solid #ccc;
+}
+
+.vote-up-down-widget-alt .vote-up-act,
+.vote-up-down-widget-alt .vote-up-inact:hover {
+  background: url(images/plus_act.png) no-repeat center 3px;
+}
+
+.vote-up-down-widget-alt .vote-up-inact,
+.vote-up-down-widget-alt .up-inact {
+  background: url(images/plus_inact.png) no-repeat center 3px;
+}
+
+* html .vote-up-down-widget-alt .vote-up-act,
+* html .vote-up-down-widget-alt .vote-up-inact,
+* html .vote-up-down-widget-alt .up-inact {
+  width: 55px;
+}
+
+* html .content {
+  height: 1%;
+}

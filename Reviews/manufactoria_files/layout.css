@@ -1,0 +1,169 @@
+/* $Id: layout-fixed.css,v 1.5.2.3 2009/02/13 19:20:19 johnalbin Exp $ */
+
+/** body **/
+
+  #page, #closure-blocks {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border-left:3px solid #000;
+    border-right:3px solid #000;
+  }
+
+  #navigation-top, #navigation
+  {
+    position: absolute;
+    left: -10000px;
+  }
+
+  #skip-to-nav {
+    float: right;
+    margin: 0 !important;
+    font-size: 0.8em;
+    /* Fuck it */
+   display:none;
+  }
+
+  #skip-to-nav a:link, #skip-to-nav a:visited {
+    color: #fff; /* Same as background color of page */
+  }
+
+  #skip-to-nav a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+
+/** header **/
+
+  #header-inner {
+    height:230px;
+  }
+
+  #logo {
+    float: left;
+  }
+
+  #header-blocks {
+    clear: both;
+  }
+
+/** main (container for everything else) **/
+
+  #main {
+    position: relative;
+  }
+
+/** content **/
+
+  #content, .no-sidebars #content {
+    float: left;
+    width: 800px;
+    margin-left: 0;
+    margin-right: -800px; /* Negative value of #content's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
+  }
+
+  .sidebar-left #content {
+    width: 600px;
+    margin-left: 200px; /* The width of #sidebar-left. */
+    margin-right: -800px;
+  }
+
+  .sidebar-right #content {
+    width: 600px;
+    margin-left: 0;
+    margin-right: -600px;
+  }
+
+  .two-sidebars #content {
+    width: 400px;
+    margin-left: 200px;
+    margin-right: -600px;
+  }
+
+  #content-inner {
+    margin: 0;
+    padding: 15px 6px 6px 9px;
+  }
+
+/** navbar **/
+
+  #navbar {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    margin-right: -100%;
+    padding: 0;
+    height: 32px;
+  }
+
+  .with-navbar #content, .with-navbar #sidebar-left, .with-navbar #sidebar-right {
+    margin-top: 32px; /* navbar height */
+  }
+
+  #search-box {
+    width: 200px;
+    margin-right: -200px;
+    float: left;
+  }
+
+  #primary, #secondary {
+    margin-left: 200px; /* Width of search-box */
+  }
+
+  #navbar ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  #navbar li {
+    float: left;
+    padding: 0 10px 0 0;
+  }
+
+/** sidebar-left **/
+
+  #sidebar-left {
+    float: left;
+    width: 200px;
+    margin-left: 0;
+    margin-right: -200px;
+    padding: 0;
+  }
+
+  #sidebar-left-inner {
+    margin: 0 20px 0 0;
+    padding: 18px 0 6px 6px;
+  }
+
+/** sidebar-right **/
+
+  #sidebar-right {
+    float: left;
+    width: 200px;
+    margin-left: 600px; /* Width of content + sidebar-left. */
+    margin-right: -800px; /* Negative value of #sidebar-right's width + left margin. */
+    padding: 0;
+  }
+
+  #sidebar-right-inner {
+    margin: 0 0 0 20px;
+    padding: 18px 6px 6px 0;
+    overflow: hidden;
+  }
+
+/** Prevent overflowing content **/
+
+  #header, #content, #navbar, #sidebar-left, #sidebar-right, #footer, #closure-blocks {
+    overflow: visible;
+    word-wrap: break-word; /* A very nice CSS3 property */
+  }
+
+  #navbar {
+    overflow: visible; /* May need to be removed if using a dynamic drop-down menu */
+  }
+
+  .feed-icons {
+    display: none;
+  }

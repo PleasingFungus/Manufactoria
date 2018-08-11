@@ -1,0 +1,48 @@
+/* $Id: system-menus.css,v 1.1 2007/10/05 14:50:25 goba Exp $ */
+
+.block ul.menu {
+
+  padding-left: 1em;
+}
+ul.menu li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin: 0 0 0.4em 0; /* LTR */
+  padding: 0;
+}
+li.expanded {
+  list-style-type: circle;
+  list-style-image: url(../../../../misc/menu-expanded.png);
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li.collapsed {
+  list-style-type: disc;
+  list-style-image: url(../../../../misc/menu-collapsed.png); /* LTR */
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li.leaf {
+  list-style-type: square;
+  list-style-image: none;
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li a.active {
+  color: #000;
+}
+td.menu-disabled {
+  background: #ccc;
+}
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+ul.links.inline {
+  display: inline;
+}
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}

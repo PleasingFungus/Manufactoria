@@ -1,0 +1,1069 @@
+/*
+
+A theme based on a Six Apart theme adapted for Casual Gameplay
+name: Pokedstudio  
+designer: Jay Bibby  
+layouts: layout-wtt, layout-twt, layout-wt, layout-tw
+*/
+
+
+/* Default ---------------------------------------------------------------- */
+
+/* Global */
+
+body {
+    font: normal 14px trebuchet MS, verdana, arial, sans-serif;
+	background: url(pokedstudiotiledbackground.gif) repeat;
+	}
+p {
+	margin-top:10px;
+	margin-bottom:20px;
+	}
+
+
+/* Header */
+
+#header {
+    border-top-width: 0px;
+    border-top-style: solid;
+}
+
+#header-inner {
+    position: relative;
+}
+
+#header-name {
+    margin: 0 0 5px;
+    line-height: 1;
+}
+
+#header-description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.125;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header a:hover {
+    text-decoration: underline;
+}
+
+
+/* Content */
+
+.asset-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.asset-name a {
+    text-decoration: none;
+}
+
+.asset-name a:hover {
+    text-decoration: underline;
+}
+
+.asset-content {
+    margin: 5px 0;
+}
+
+.asset-more-link {
+    font-weight: bold;
+}
+
+.asset-meta {
+    margin-top: .25em;
+    padding-top: 2px;
+    font-weight: normal;
+
+    display: block;
+    border-top: 1px dashed #d4e5f2;
+    padding-bottom: .3em;
+}
+
+.asset-footer a,
+.comment-footer a {
+    font-weight: normal;
+}
+
+.content-nav {
+    margin: 5px 0 10px;
+}
+
+.archive-title {
+    margin: 5px 0 30px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.trackbacks-info,
+.trackback-content,
+.comment-content,
+.comments-open-content,
+.comments-closed {
+    margin: 5px 0;
+}
+
+.widget-header,
+.trackbacks-header,
+.comments-header,
+.comments-open-header,
+.archive-header,
+.search-form-header,
+.search-results-header {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-results-header {
+    margin-bottom: .25em;
+}
+
+.asset-more-link,
+.asset-meta,
+.comment-footer,
+.trackback-footer,
+.typelist-thumbnailed {
+    font-size: 11px;
+}
+
+/* Footer */
+
+#footer-content,
+#footer-content a {
+    color: #fff;
+}
+
+
+/* Utility */
+
+.widget-header,
+.trackbacks-header,
+.comments-header,
+.comments-open-header,
+.archive-header,
+.search-form-header,
+.search-results-header {
+    /* ie win (5, 5.5, 6) bugfix */
+    p\osition: relative;
+    width: 100%;
+    w\idth: auto;
+}
+
+
+/* Global ----------------------------------------------------------------- */
+
+body {
+    color: #333;   
+    background: #062949 url(body.gif) repeat-x fixed top center; 
+}
+
+a {
+    color: #063466; 
+    font-weight: bold; 
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Layout ----------------------------------------------------------------- */
+
+#container-inner,
+#content {
+    background-color: #F7F7F7;
+}
+
+#header-inner, #content-inner, #footer-inner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#header-inner, #beta-inner, #gamma-inner {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#header-inner,
+#main-navigation-inner,
+#content-inner,
+#footer-inner {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/* Header ----------------------------------------------------------------- */
+
+#header { 
+    border-color: #0a4a80;  
+    background: #000000 url(pokedstudiobanner.jpg) no-repeat bottom left; 
+}
+
+#header a {
+    color: #fff;
+    font-weight: normal;
+}
+
+* html #header-content {  /*HACK targets IE6 but not 7, instead of min-height*/
+    height: 150px;
+}
+#header-content {
+    width: 770px; 
+    min-height: 150px; 
+    margin: 15px 0px 0px 20px;
+}
+
+#header-name {
+    color: #fff; 
+    font-size: 28px;
+    font-weight: normal;
+}
+
+#header-description {
+    color: #999;  
+    font-weight: normal; 
+}
+
+#header {
+    margin-bottom: 0px;
+}
+
+#header-inner {
+    padding-bottom: 20px;
+    padding-left: 27px;
+}
+
+#banner-link {
+	position:absolute;
+	top:35px;
+	right:-10px;
+}
+
+/* Content ---------------------------------------------------------------- */
+
+.asset {
+    /* background: url(post-ornament.gif) no-repeat 0 0;*/
+}
+
+.asset-header {
+    margin-top: 15px;
+}
+
+.asset-header,
+.asset-content,
+.asset-footer {
+    margin-left: 15px;
+    margin-right: 15px;
+}  
+
+.asset-name,
+.asset-name a,
+.archive-title {
+    color: #284E43;
+}
+
+.asset-footer,
+.asset-footer a,
+.comment-footer,
+.comment-footer a,
+.trackback-footer {
+    color: #999;
+}
+
+.asset-footer {
+    border-top-color: #d4e5f2;
+}
+
+.comments-header,
+.comments-open-header,
+.trackbacks-header,
+.archive-header,
+.search-form-header,
+.search-results-header {
+    color: #063466;
+}
+
+
+.archive-list-item {
+    margin-bottom: 5px;
+}
+
+
+/* Widget ----------------------------------------------------------------- */
+
+.layout-wtt #content-inner { background: transparent url(content-wtt.gif) repeat-y scroll right top; }
+.layout-twt #content-inner { background: transparent url(content-new-twt.gif) repeat-y scroll left top; }
+.layout-wt #content-inner { background: transparent url(content-wt.gif) repeat-y scroll right top; }
+.layout-tw #content-inner { background: transparent url(content-tw.gif) repeat-y scroll left top; }
+
+#content .widget {
+    border-bottom: 1px solid #C2DAF2;
+}
+
+.widget-content {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.widget-header {
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.widget-header {
+    margin-top: 10px;
+}
+
+.widget-header {
+    color: #284E43;
+    font-weight: bold;
+}
+
+.widget-header a {
+    color: #063466;
+    font-weight: bold;
+}
+
+.widget-content {
+    margin-bottom: 15px;
+}
+
+.widget-content a {
+    color: #999;
+}
+
+.widget-about .widget-header {
+    margin-bottom: 10px;
+}
+
+#content .widget-powered .widget-content {
+    margin: 0;
+    background-color: #f0f6fa;
+}
+
+.layout-wtt #content #beta .widget-powered .widget-content,
+.layout-twt #content #gamma .widget-powered .widget-content,
+.layout-wt #content #beta .widget-powered .widget-content {
+    margin-left: 1px;
+}
+
+.layout-twt #content #beta .widget-powered .widget-content,
+.layout-tw #content #beta .widget-powered .widget-content {
+    margin-right: 1px;
+}
+
+.widget-email .widget-content,
+.widget-subscribe .widget-content,
+.widget-syndicate .widget-content {
+    margin-top: 15px;
+} 
+
+.widget-header {
+    font-size: 14px;
+}
+
+.widget-header a {
+    text-decoration: none;
+}
+
+.widget-header a:hover {
+    text-decoration: underline;
+}
+
+.widget-content {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 11px;
+}
+
+
+/* "Powered By" Widget */
+
+.widget-powered .widget-content {
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Calendar Widget */
+
+.widget-calendar .widget-content table {
+    font-size: 10px;
+}
+
+
+/* Footer Widgets */
+
+#footer .widget {
+    margin: 10px 0;
+}
+
+#footer .widget-content {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#footer .widget-powered .widget-content {
+    padding: 0;
+    text-align: left;
+}
+
+
+/* Footer ----------------------------------------------------------------- */
+
+#footer { 
+    background-color: #0a4a80; 
+}
+
+#footer-content {
+    margin: 20px 0;
+}
+
+
+/* Utilities -------------------------------------------------------------- */
+
+#header:after,
+#header-inner:after,
+#content:after,
+#alpha-inner:after,
+#beta-inner:after,
+#gamma-inner:after,
+#footer:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+}
+
+
+#header-inner,
+#content-inner,
+#footer-inner,
+.asset-body {
+    height: 1%;
+}
+
+
+/* Custom Styles ---------------------------------------------------------- */
+
+.asset-stream  .asset-header-content {
+    padding: 15px 0 0 15px;
+}
+
+/* Custom Styles (CasualGameplay) ----------------------------------------- */
+/****************************************************************************/
+
+/* Wide-Thin-Thin */
+
+.layout-wtt #alpha {
+    width: 560px;
+}
+
+.layout-wtt #beta {
+    left: 190px;
+    width: 190px;
+}
+
+.layout-wtt #gamma {
+    right: 190px;
+    width: 190px;
+}
+
+
+/* Thin-Wide-Thin */
+
+.layout-twt #alpha {
+    left: 190px;
+    width: 560px;
+}
+
+.layout-twt #beta {
+    left: -560px;
+    width: 190px;
+}
+
+.layout-twt #gamma {
+    width: 190px;
+}
+
+
+#header-inner, #footer-inner,
+#alpha-inner, #beta-inner, #gamma-inner {
+    overflow: hidden;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#container-inner {
+    width: 960px;
+}
+
+/* Wide-Thin-Thin */
+
+.layout-wtt #beta {
+    left: 200px;
+    width: 200px;
+}
+
+.layout-wtt #gamma {
+    right: 200px;
+    width: 200px;
+}
+
+/* Thin-Wide-Thin *************/
+
+.layout-twt #alpha {
+    left: 210px;
+    width: 520px;
+}
+
+.layout-twt #beta {
+	left:-520px;
+    width: 210px;
+}
+
+.layout-twt #gamma {
+    width: 210px;
+}
+
+/* Content ---------------------------------------------------------------- */
+
+
+/* Sign In ---------------------------------------------------------------- */
+
+#header .widget-sign-in,
+#header .widget-rss {
+    position: absolute;
+    top: 5px;
+    color: #777;
+    font-family: verdana;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+#header .widget-sign-in {
+    right: 0px;
+    text-align: center;
+}
+#header .widget-rss {
+    left: -10px;
+    text-align: left;
+    width:250px;
+	height:23px;
+}
+#header .widget-rss img {
+	vertical-align:middle;
+}
+#header .widget-sign-in .widget-header {
+    display: none;
+}
+#header .widget-sign-in .widget-content,
+#header .widget-rss .widget-content {
+    background-color: #000;
+    margin: 0;
+    padding: 5px 0px 10px 15px;
+    overflow: hidden;
+}
+#header .widget-sign-in .widget-content {
+    float: right;
+}
+#header .widget-rss .widget-content {
+    float: left;
+}
+#header .widget-sign-in a,
+#header .widget-rss a {
+    color: #777;
+    text-decoration: underline !important;
+}
+#header .widget-sign-in a:hover,
+#header .widget-rss a:hover {
+    color: #fff;
+}
+
+/* Navigation ----------------------------------------------------------------- */
+
+#main-navigation {
+    width: 960px;
+    background: #e7e7e7 url("http://jayisgames.com/mt4/mt-static/themes/pokedstudio/nav-bg.gif") top left repeat-x;
+    border-bottom: 1px solid #ccc;
+    font-size: 11pt;
+}
+#main-navigation-inner {
+    position: relative;
+	z-index:3;
+}
+#main-navigation ul {
+    height:auto;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+#main-navigation ul li {
+    float: left;
+    padding-top: 2px;
+}
+#main-navigation ul li h2 {
+    margin:0;
+    padding:0;
+}
+#main-navigation ul li a {
+    color: #063466;
+    font-weight: bold;
+    display: block;
+    line-height: 31px;
+    margin: 0px;
+    padding: 2px 11px !important;
+    text-align: left;
+    text-decoration: none;
+    border-left: 1px solid #bbb;
+}
+#main-navigation ul li.first a {
+    border-left: 0;
+}
+#main-navigation ul li a.last {
+    border-right: 1px solid #bbb;
+}
+#main-navigation ul li a:hover {
+	text-decoration: none;
+/*	background: #4ED5E5;*/
+	background:#FFB0C7;
+	color:#000;
+}
+#main-navigation ul li ul {
+    background: #e7e7e7;
+    display: none;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    z-index:3;
+}
+#main-navigation ul li:hover ul {
+    display: block;
+}
+#main-navigation ul li li {
+    padding-top: 0;
+    display: block;
+    float: none;
+}
+#main-navigation ul li ul a {
+    background: #e7e7e7;
+    margin: 0px;
+    padding: 0 11px;
+    border: none;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+#main-navigation ul li ul a.last {
+    border-bottom: 1px solid #bbb;
+}
+#main-navigation ul li.on > h2 > a, #main-navigation ul li.on > a {
+    color: #000;
+    background: #fff url("http://jayisgames.com/mt4/mt-static/themes/pokedstudio/nav-arrow-on.gif") no-repeat 50% bottom;
+    border-left: 1px solid #bbb;
+}
+
+
+/* Utilities -------------------------------------------------------------- */
+
+#header:after,
+#header-inner:after,
+#content:after,
+#alpha-inner:after,
+#beta-inner:after,
+#gamma-inner:after,
+#main-navigation:after,
+.entry-asset .asset-meta:after,
+.comment:after,
+#footer-content:after,
+#footer:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+}
+
+#header-inner,
+#content-inner,
+#footer-inner,
+#main-navigation,
+.entry-asset .asset-meta,
+.comment,
+#footer-content,
+.asset-body {
+    height: 1%;
+}
+
+
+/* Appearance -------------------------------------------------------------- */
+
+.featureTitle,
+.entryTitle,
+a:link.featureTitle,
+a:visited.featureTitle,
+a:active.featureTitle,
+a:link.entryTitle,
+a:visited.entryTitle,
+a:active.entryTitle {
+	color: #063466;
+	text-decoration:none;
+	}
+
+.entry-container {
+	width:100%;
+	/*background: url(entry-header.png) no-repeat;*/
+	}
+
+.entry, .bfg-feature {
+	border-top:5px solid #063466;
+	}
+.entryheader {
+	/*border-top:4px solid #063466;*/
+	border-bottom:2px solid #063466;
+	}
+
+.entrydate {
+	color:#555555;
+	}
+
+.byline	{
+	font-size: 9pt;
+	padding-bottom:1px;
+	padding-left:2px;
+	margin-bottom:5px;
+	}
+.byline a,
+.byline a:link,
+.byline a:visited,
+.byline a:active,
+.byline a:hover {
+		text-decoration: none;
+	}
+.byline	{ 
+	color: #000000;
+	border-bottom:1px solid #063466;
+	background:#e7e7e7;
+	}
+
+.leftimage, .rightimage, .bannerimage, .iconimage {
+   border: 3px solid #DDDDDD;
+	}
+
+.tags a:link,
+.tags a:visited,
+.tags a:active {
+	color:#4179D8;
+	}
+
+.tags, .rating_header {
+	color:#555555;
+	}
+
+.platform {
+	color:#9DC521;
+	}
+.platform a,
+.platform a:link,
+.platform a:visited,
+.platform a:active { color: #9DC521; }
+
+a.comments-link,
+a:link.comments-link,
+a:visited.comments-link,
+a:active.comments-link {
+color:#F63292;
+}
+
+a 			{ color: #063466; text-decoration: none; }
+a:link		{ color: #063466; text-decoration: none; }
+a:visited	{ color: #063466; text-decoration: none; }
+a:active	{ color: #063466; }
+a:hover, a:hover h3, a:hover.featureTitle, a:hover.entryTitle, .tags a:hover, a:hover.comments-link { color: #72BF33; text-decoration: underline;}
+
+.tags a { background: url(dotted.gif) repeat-x left bottom; }
+
+blockquote {
+	font-size:12px;
+	color:#231F20;
+	line-height:16px;
+	background-color: #70DAFB;
+	border:1px solid #E311ED;
+	padding:10px;
+	margin-left:30px;
+	margin-right:30px;
+	margin-bottom:20px;
+	}
+
+
+li.archive-list-item {
+	/*background:#CCF0C0;*/
+	margin-top:5px;
+	border-bottom: 1px #063466 dotted;
+	}
+
+.mission-background {
+	/*background:#86DCF5;*/
+	color:#CAF3C7;
+	background:#CAF3C7;
+	}
+
+.newsflash {
+	color:#EA197E;
+	}
+	
+/* Category icons -------------------*/
+.action-arcade {
+	margin-right:25px;
+	background: url(/images/tag_action-arcade.gif) no-repeat 355px 95%;
+	}
+.adventure {
+	margin-right:25px;
+	background: url(/images/tag_adventure.png) no-repeat 355px 95%;
+	}
+.boardgame {
+	margin-right:25px;
+	background: url(/images/tag_boardgame.png) no-repeat 355px 95%;
+	}
+.cardgame {
+	margin-right:25px;
+	background: url(/images/tag_cardgame.png) no-repeat 355px 95%;
+	}
+.fighting {
+	margin-right:25px;
+	background: url(/images/tag_fighting.png) no-repeat 355px 95%;
+	}
+.hidden-object {
+	margin-right:25px;
+	background: url(/images/tag_hidden-object.png) no-repeat 355px 95%;
+	}
+.interactiveart {
+	margin-right:25px;
+	background: url(/images/tag_interactiveart.png) no-repeat 355px 95%;
+	}
+.jigman {
+	margin-right:25px;
+	background: url(/images/tag_jigman_ps.png) no-repeat 355px 95%;
+	}
+.music {
+	margin-right:25px;
+	background: url(/images/tag_music.png) no-repeat 355px 95%;
+	}
+.physics {
+	margin-right:25px;
+	background: url(/images/tag_physics.png) no-repeat 355px 95%;
+	}
+.platformer {
+	margin-right:25px;
+	background: url(/images/tag_platform.png) no-repeat 355px 95%;
+	}
+.point-and-click {
+	margin-right:25px;
+	background: url(/images/tag_point-and-click.png) no-repeat 355px 95%;
+	}
+.puzzle {
+	margin-right:25px;
+	background: url(/images/tag_puzzle.png) no-repeat 355px 95%;
+	}
+.room-escape {
+	margin-right:25px;
+	background: url(/images/tag_room-escape.png) no-repeat 355px 95%;
+	}
+.resourcemgmt {
+	margin-right:25px;
+	background: url(/images/tag_resourcemgmt.png) no-repeat 355px 95%;
+	}
+.rpg-strategy {
+	margin-right:25px;
+	background: url(/images/tag_rpg-strategy.png) no-repeat 355px 95%;
+	}
+.simple-idea {
+	margin-right:25px;
+	background: url(/images/tag_simple-idea.png) no-repeat 355px 95%;
+	}
+.simulation {
+	margin-right:25px;
+	background: url(/images/tag_simulation.png) no-repeat 355px 95%;
+	}
+.sports {
+	margin-right:25px;
+	background: url(/images/tag_sports.png) no-repeat 355px 95%;
+	}
+.stunt {
+	margin-right:25px;
+	background: url(/images/tag_stunt.png) no-repeat 355px 95%;
+	}
+.textgame {
+	margin-right:25px;
+	background: url(/images/tag_textgame.png) no-repeat 355px 95%;
+	}
+.tower-defense {
+	margin-right:25px;
+	background: url(/images/tag_tower-defense.png) no-repeat 355px 95%;
+	}
+.webtoy-interactive {
+	margin-right:25px;
+	background: url(/images/tag_webtoy-interactive.png) no-repeat 355px 95%;
+	}
+.wordgame {
+	margin-right:25px;
+	background: url(/images/tag_wordgame.png) no-repeat 355px 95%;
+	}
+.xmas {
+	margin-right:25px;
+	background: url(/images/tag_xmas.png) no-repeat 355px 95%;
+	}
+
+/* Rating icons ------------------------*/
+
+.rating-g {
+	background: url(rating-g.png) no-repeat;
+	}
+.rating-y {
+	background: url(rating-y.png) no-repeat;
+	}
+.rating-o {
+	background: url(rating-o.png) no-repeat;
+	}
+.rating-r {
+	background: url(rating-r.png) no-repeat;
+	}
+
+
+/* Spoiler tags ------------------------*/
+
+div.spoiler {
+  border: 2px solid #C0C0C0;
+  margin-bottom: 0.75em;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: none;
+	}
+
+.entrybody div.spoiler {
+	margin-top:-15px
+	}
+
+div.spoiler.spoiled {
+  display: block;
+	}
+
+div.spoiler > a:first-child {
+  background: #C0C0C0;
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  padding-left: 0.5em;
+  line-height: 150%;
+	}
+
+div.spoiler > a:first-child:before {
+  content: 'Hide ';
+	}
+
+div.spoiler > a.hide:first-child:before {
+  content: 'Show ';
+	}
+
+div.spoiler > div {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+	}
+
+span.error-tag {
+  background: #FF0000;
+  color: #FFFFFF;
+	}
+
+.spoiler ol, .spoiler ul {
+	margin-top:5px;
+	}
+li > .spoiler {
+	margin:5px 0 5px 0;
+	}
+.spoiler .spoiler {
+	margin:5px 0 5px 0;
+	}
+
+.mt-powered-footer {
+	position:absolute;
+	top:20px;
+	left:20px;
+	}
+
+.mt-hosted-footer {
+	position:absolute;
+	top:20px;
+	right:20px;
+	}
+
+ul, ol, dl {
+    margin-bottom: 1.25em;
+}
+
+#walkthrough.comments {
+	width:94%;
+	padding-left:10px;
+	margin-bottom:20px;
+}
+#walkthrough.comments,
+.walkthrough-alert {
+	background:#DAEBFF;
+	border:#063466 1px solid;
+}
+
+#walkthrough > .comments-content {
+	padding-right:10px;
+}
+.spoiler {
+	background-color:#f7f7f7;
+}
+
+#from-search {
+	width:100%;
+	background:#00FF00;
+}
+#from-search-inner {
+	width:960px;
+	text-align:left;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	font-size:medium;
+}
+div.all-gamesfeatured {
+	border:#063466 1px dotted;
+}
+button, .playButton {
+	color:#08233e;
+	background-color:rgba(255,204,0,1);
+	border:1px solid #ffcc00;
+	}
+button:hover {
+	background-color:rgba(255,204,0,0.8);
+	}
+button.play-btn, .playButton {
+	background-color:rgba(167,221,50,1) !important;
+	border-color:#a7dd32;
+	}
+button.play-btn:hover, .playButton:hover {
+	background-color:rgba(167,221,50,0.8) !important;
+	}

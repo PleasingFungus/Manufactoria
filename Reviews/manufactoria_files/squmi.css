@@ -1,0 +1,42 @@
+/* Static View-only Star Version */
+div.fivestar-widget-static .star, div.fivestar-widget .star, div.fivestar-widget .star a {
+  width: 8px;
+  height: 14px;
+  background: url(squmi.png) no-repeat 0 0;
+}
+div.fivestar-widget-static .star-last, div.fivestar-widget .star-last, div.fivestar-widget .star-last a {
+  width: 9px;
+  background: url(squmi_last.png) no-repeat 0 0;
+}
+div.fivestar-widget-static .star-first, div.fivestar-widget .star-first, div.fivestar-widget .star-first a {
+  width: 9px;
+  background: url(squmi_first.png) no-repeat 0 0;
+}
+div.fivestar-widget-static .star span.on {
+  background: url(squmi.png) no-repeat 0 -28px;
+}
+
+div.fivestar-widget-static .star span.off {
+  background: url(squmi.png) no-repeat 0 0;
+}
+div.fivestar-widget-static .star-first span.on {
+  background: url(squmi_first.png) no-repeat 0 -28px;
+}
+div.fivestar-widget-static .star-first span.off {
+  background: url(squmi_first.png) no-repeat 0 0;
+}
+/* Javascript Star Version */
+div.fivestar-widget .cancel {
+  width: 16px;
+  height: 14px;
+}
+div.fivestar-widget .cancel, div.fivestar-widget .cancel a {
+  background: url(cancel.png) no-repeat 0 0;
+}
+
+div.fivestar-widget div.on a {
+  background-position: 0 -28px;
+}
+div.fivestar-widget div.hover a, div.rating div a:hover {
+  background-position: 0 -28px;
+}

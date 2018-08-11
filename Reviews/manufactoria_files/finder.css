@@ -1,0 +1,13 @@
+/* $Id: finder.css,v 1.2.2.6 2009/08/22 05:13:26 danielb Exp $ */
+
+div.finder-buttons {
+  clear: both;
+}
+
+div.finder-buttons input.form-submit {
+  float: left;
+}
+
+div.finder-buttons div.ahah-progress {
+  float: right;
+}

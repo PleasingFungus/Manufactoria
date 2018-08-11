@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+/*
+ * Narcissus theme customization
+ */
+#dsq-content .dsq-header-avatar img {
+    width: 24px;
+    height: 24px;
+}
+
+
+@import url(http://www.tigsource.com/css/disqus.css);
