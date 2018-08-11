@@ -1,9 +1,0 @@
-/* $Id: spelling.css,v 1.1.2.1 2009/04/21 15:07:24 doq Exp $ */
-
-/**
- * Do not show box with description since if user has no
- * Javascripts enabled it makes no sense.
- */
-#block-spelling-0 {
-  display: none;
-}
